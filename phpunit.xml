@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit
+	colors="true"
+	bootstrap="vendor/autoload.php">
+	<testsuites>
+		<testsuite name="Unit Tests">
+			<directory>tests/unit/</directory>
+		</testsuite>
+		<testsuite name="Integration Tests">
+			<directory>tests/integration/</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist>
+			<directory suffix=".php">src/</directory>
+			<file>routes.php</file>
+		</whitelist>
+	</filter>
+</phpunit>
